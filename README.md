@@ -13,7 +13,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+### `pip install fastapi typing loguru re`
 
+Installs the necessary dependencies for the backend
+### `uvicorn main:app --reload --host 0.0.0.0 --port 8000`
+
+Runs the backend server.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
