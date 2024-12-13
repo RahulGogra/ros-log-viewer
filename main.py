@@ -16,6 +16,10 @@ app.add_middleware(
 
 LOG_PATTERN = re.compile(r"\[(.*?)\] \[(.*?)\] \[(.*?)\] (.*)")
 
+@app.get("/")
+def get_hello():
+    return {"Hello "}
+
 @app.post("/upload/")
 async def upload_log_file(file: UploadFile = File(...)):
     contents = await file.read()
