@@ -22,7 +22,7 @@ const App = () => {
 
         try {
             const response = await axios.post(
-                "http://localhost:8000/upload",
+                "https://ros-log-viewer.onrender.com/upload",
                 formData
             );
             setLogs(response.data.logs);
